@@ -65,7 +65,7 @@ transform = transforms.Compose([
 ])
 
 trainset = datasets.DatasetFolder(
-    root=f'C:/Users/ljq-2/Documents/Spyder/SoundDiagnosisProject/SignalMasks/id_00forNN/Preset{presetN}/Training',
+    root='', ##enter root here
     loader=npy_loader,
     extensions='.npy',
     transform = transform
@@ -75,7 +75,7 @@ trainloader = DataLoader(
 )
 
 testset = datasets.DatasetFolder(
-    root=f'C:/Users/ljq-2/Documents/Spyder/SoundDiagnosisProject/SignalMasks/id_00forNN/Preset{presetN}/Validation',
+    root='', ##enter root here
     loader=npy_loader,
     extensions='.npy',
     transform = transform
